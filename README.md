@@ -3,9 +3,9 @@ A simple and useful keypad (M x N) library for Raspberry Pi using python languag
 
 ## Usage
 
-*Pin definition in library is in BCM numbering.*
+*Note: Pin definition in library is in BCM numbering.*
 
-Initialize a default keypad 4x4 is very simple.
+**Initialize a default keypad 4x4 is very simple.**
 
 ```
 keyboard =  keypad(rowPins = [1, 2, 3, 4],			# BCM numbering
@@ -13,7 +13,7 @@ keyboard =  keypad(rowPins = [1, 2, 3, 4],			# BCM numbering
 
 ```
 
-Or by this way to re-define return table.
+**Or by this way to re-define return table.**
 
 ```
 keyboard =  keypad(rowPins = [1, 2, 3, 4],		# BCM numbering
@@ -32,7 +32,7 @@ keyThread = threading.Thread(target= keyboard_scan)
 keyThread.start()
 ```
 
-Put your code to process keyboard event here...
+**Put your code to process keyboard event here...**
 
 ```
 #
